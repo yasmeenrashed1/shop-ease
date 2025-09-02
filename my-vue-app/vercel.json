@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "my-vue-app/package.json",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/my-vue-app/$1"
+    }
+  ]
+}
